@@ -1,25 +1,10 @@
 <template>
-  <div class="cards">
-    <b-container>
-        <b-row>
-          <b-col>
-            <div>
-              <b-card title="Hello"
-                      img-src="https://lorempixel.com/600/300/food/5/"
-                      img-alt="Image"
-                      img-top
-                      tag="article"
-                      style="max-width: 20rem;"
-                      class="mb-2">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
-                <b-button href="#" variant="primary">Go somewhere</b-button>
-              </b-card>
-            </div>
-          </b-col>
-        </b-row>
-    </b-container>
+  <div>
+      <div class="container">
+        <h2 class="title">Monster Name</h2>
+        <img src="https://lorempixel.com/600/300/food/5/">
+
+      </div>
   </div>
 </template>
 
@@ -36,5 +21,24 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.container{
+  border: 1px solid #CCC;
+  padding: 20px;
+  background-image: url(http://www.ericwallen.tech/src/app/fire.gif);
+  max-width: 400px;
+  overflow: hidden;
+}
+
+
+
+.container img{
+  width: 100%
+}
+
+.title{
+  text-align: center;
+  color: #FFF;
+}
 
 </style>
