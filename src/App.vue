@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <toolbar></toolbar>
-    <cards></cards>
+    <cards :monsters='monsters'></cards>
     <post></post>
   </div>
 </template>
@@ -19,11 +19,15 @@ export default {
     Cards,
     Post
   },
+  data() {
+    return {
+      monsters: []
+    }
+  },
   async mounted(){
-    console.log(`${baseURL}/monsters`);
     const data = await fetch(`${baseURL}/monsters`)
     const response = await data.json()
-
+    this.monsters = response.monsters.map(monster => monster)
   },
 }
 </script>
