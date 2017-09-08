@@ -1,18 +1,20 @@
 <template>
   <div class="cards">
-
+    <Card v-for="" :email="" key=""></Card>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'cards',
-  data () {
-    return {
+import Card from './Card'
 
-    }
+export default {
+  name: 'Cards',
+  props: [],
+  components: {
+    Card
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
