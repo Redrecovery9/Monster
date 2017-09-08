@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-
+    
   </div>
 </template>
 
@@ -9,7 +9,7 @@ export default {
   name: 'header',
   data () {
     return {
-      
+
     }
   }
 }
