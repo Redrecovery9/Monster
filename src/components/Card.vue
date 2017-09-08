@@ -26,6 +26,7 @@
 <script>
 export default {
   name: 'card',
+  props: ['monster'],
   data () {
     return {
 

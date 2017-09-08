@@ -1,6 +1,6 @@
 <template>
   <div class="cards">
-    <Card></Card>
+    <Card v-for="monster in monsters" :monster='monster' key=""></Card>
   </div>
 </template>
 
@@ -9,7 +9,7 @@ import Card from './Card'
 
 export default {
   name: 'Cards',
-  props: [],
+  props: ['monsters'],
   components: {
     Card
   }
