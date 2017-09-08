@@ -5,7 +5,7 @@
       <h2 class="title">{{monster.name}}</h2>
       <img :src="monster.image">
     </div>
-    <div v-else='monster.scary' class="container" style="background: url(http://www.ericwallen.tech/src/app/smoke.gif)">
+    <div v-else='monster.scary' class="container" style="background: url(https://rasica.files.wordpress.com/2014/04/fire-5.gif)">
       <h2 class="title">{{monster.name}}</h2>
       <img :src="monster.image">
     </div>
