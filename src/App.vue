@@ -10,6 +10,7 @@
 import Header from './components/Header'
 import Cards from './components/Cards'
 import Post from './components/Post'
+const baseURL = 'https://monsters-app.herokuapp.com/api/v1'
 
 export default {
   name: 'app',
@@ -17,7 +18,13 @@ export default {
     Header,
     Cards,
     Post
-  }
+  },
+  async mounted(){
+    const data = await fetch(`${baseURL}/monsters`)
+    const response = await data.json()
+    
+    })
+  },
 }
 </script>
 
