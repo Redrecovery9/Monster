@@ -1,6 +1,6 @@
 <template>
   <div class="cards">
-    <Card v-for="" :email="" key=""></Card>
+    <Card></Card>
   </div>
 </template>
 

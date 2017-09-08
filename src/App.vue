@@ -22,8 +22,7 @@ export default {
   async mounted(){
     const data = await fetch(`${baseURL}/monsters`)
     const response = await data.json()
-    
-    })
+
   },
 }
 </script>

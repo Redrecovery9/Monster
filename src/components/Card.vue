@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: 'cards',
+  name: 'card',
   data () {
     return {
 
