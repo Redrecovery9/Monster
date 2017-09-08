@@ -4,7 +4,7 @@
         <b-row>
           <b-col>
             <div>
-              <b-card title="Card Title"
+              <b-card title="Hello"
                       img-src="https://lorempixel.com/600/300/food/5/"
                       img-alt="Image"
                       img-top
