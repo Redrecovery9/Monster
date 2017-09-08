@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <header></header>
+    <cards></cards>
+    <post></post>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Header from './components/Header'
+import Cards from './components/Cards'
+import Post from './components/Post'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Header,
+    Cards,
+    Post
   }
 }
 </script>
