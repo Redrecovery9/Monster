@@ -2,11 +2,11 @@
   <div>
 
     <div v-if='!monster.scary' class="container" style="background: url(http://dribbble.s3.amazonaws.com/users/41276/screenshots/332290/animated-rainbow.gif)">
-      <h2 class="title">{{monster.name}}</h2>
+      <h2 class="title black">{{monster.name}}</h2>
       <img :src="monster.image">
     </div>
     <div v-else='monster.scary' class="container" style="background: url(https://rasica.files.wordpress.com/2014/04/fire-5.gif)">
-      <h2 class="title">{{monster.name}}</h2>
+      <h2 class="title white">{{monster.name}}</h2>
       <img :src="monster.image">
     </div>
       <div class="desc-container">
@@ -54,9 +54,16 @@ export default {
   width: 100%
 }
 
-.title{
+.black{
+  text-align: center;
+  color: #050505;
+  font-weight: bolder;
+}
+
+.white{
   text-align: center;
   color: #FFF;
+  font-weight: bolder;
 }
 
 </style>
