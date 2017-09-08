@@ -20,6 +20,7 @@ export default {
     Post
   },
   async mounted(){
+    console.log(`${baseURL}/monsters`);
     const data = await fetch(`${baseURL}/monsters`)
     const response = await data.json()
 
